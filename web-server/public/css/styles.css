@@ -1,6 +1,90 @@
+body{
+    max-width: 500px;
+    margin:30px auto;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
+
+}
 h1{
-    color:steelblue
+    color:whitesmoke;
+    text-align:center;
+    font-size: 35px;
+    margin:40px auto;
+    font-family: 'Rubik', sans-serif;
+}
+h1:before
+ {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right:10px;
+  margin-bottom: -30px;
+  background: url("../img/moonlight.png");
+  background-size: 100%;
+}
+h2{
+    font-size: 30px;
+    margin:40px auto;
 }
 .pig{
     width:400px;
 }
+
+.headerTete{
+    display: flex;
+    justify-content: space-between;
+}
+.headerTete a{
+    text-decoration: none;
+    font-size: 25px;
+    color:teal
+}
+.headerTete a:active{
+    color:tomato;
+}
+
+.footerPied{
+   display: flex;
+   justify-content: center;
+   color:slategray;
+}
+h5{
+    font-size: 25px;
+    
+  
+}
+
+.locationIcon,.weatherNewsIcon{
+    width:35px;
+    height:35px;
+   
+}
+.formSection{
+    display: flex;
+    justify-content: center;
+}
+.messageOneDiv,.messageTwoDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.messageOne,.messageTwo{
+    margin-left:15px;
+    font-size: 25px;
+}
+input,button{
+    padding:8px;
+}
+.aboutMe{
+    font-size: 25px;
+}
+.aboutMeSection{
+    display:flex;
+    justify-content: center;
+}
+
