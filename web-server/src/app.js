@@ -5,7 +5,7 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
-
+const port = process.env.PORT || 3000
 //static directory
 const publicDirectoryPath = path.join(__dirname,'../public')
 app.use(express.static(publicDirectoryPath))
@@ -93,6 +93,6 @@ app.get('*',(req, res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("the port is on port 3000")
+app.listen(port,()=>{
+    console.log(`the port is on port ${port}`)
 })
